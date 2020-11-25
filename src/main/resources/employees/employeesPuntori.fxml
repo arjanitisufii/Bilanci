@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.employees.PuntoriController">
+   <children>
+      <TableView fx:id="puntoret" layoutX="-1.0" layoutY="48.0" prefHeight="434.0" prefWidth="436.0">
+         <columns>
+            <TableColumn prefWidth="91.0" text="Emri">
+               <cellValueFactory>
+                  <PropertyValueFactory property="emri" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="79.0" text="Mbiemri">
+               <cellValueFactory>
+                  <PropertyValueFactory property="mbiemri" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="117.0" text="Email">
+               <cellValueFactory>
+                  <PropertyValueFactory property="email" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="93.0" text="Telefoni">
+               <cellValueFactory>
+                  <PropertyValueFactory property="tel" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="55.0" text="Bilanci">
+               <cellValueFactory>
+                  <PropertyValueFactory property="bilanci" />
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <Label layoutX="193.0" layoutY="20.0" text="Puntoret" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button onAction="#shtoPunetor" layoutX="14.0" layoutY="496.0" mnemonicParsing="false" text="Shto" />
+      <Button onAction="#editPuntorin" layoutX="204.0" layoutY="496.0" mnemonicParsing="false" text="Edit" />
+      <Button onAction="#deletePuntorin" layoutX="382.0" layoutY="496.0" mnemonicParsing="false" text="Fshij" />
+   </children>
+</AnchorPane>

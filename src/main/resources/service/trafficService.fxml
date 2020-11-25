@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" prefHeight="400.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.service.traffic.TrafficServiceController">
+    <children>
+        <Label layoutX="88.0" layoutY="79.0" text="Emri">
+            <font>
+                <Font name="System Bold" size="13.0"/>
+            </font>
+        </Label>
+        <Label layoutX="88.0" layoutY="109.0" text="Adresa">
+            <font>
+                <Font name="System Bold" size="13.0"/>
+            </font>
+        </Label>
+        <Label layoutX="88.0" layoutY="144.0" text="Telefoni">
+            <font>
+                <Font name="System Bold" size="13.0"/>
+            </font>
+        </Label>
+        <Label layoutX="88.0" layoutY="177.0" text="Email">
+            <font>
+                <Font name="System Bold" size="13.0"/>
+            </font>
+        </Label>
+        <Label layoutX="88.0" layoutY="207.0" text="NIPT">
+            <font>
+                <Font name="System Bold" size="13.0"/>
+            </font>
+        </Label>
+        <Label layoutX="88.0" layoutY="278.0" text="Nr. Biznesit">
+            <font>
+                <Font name="System Bold" size="13.0"/>
+            </font>
+        </Label>
+        <Label layoutX="88.0" layoutY="308.0" text="Nr. Licenses">
+            <font>
+                <Font name="System Bold" size="13.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="emri" layoutX="216.0" layoutY="76.0"/>
+        <TextField fx:id="adresa" layoutX="216.0" layoutY="106.0"/>
+        <TextField fx:id="telefoni" layoutX="216.0" layoutY="141.0"/>
+        <TextField fx:id="email" layoutX="216.0" layoutY="174.0"/>
+        <TextField fx:id="nipt" layoutX="216.0" layoutY="204.0"/>
+        <TextField fx:id="nrTVSH" layoutX="216.0" layoutY="239.0"/>
+        <TextField fx:id="nrBiznesit" layoutX="216.0" layoutY="275.0"/>
+        <TextField fx:id="nrLicenses" layoutX="216.0" layoutY="305.0"/>
+        <Label fx:id="warning" layoutX="87.0" layoutY="345.0" textFill="#eb1818" visible="false"/>
+        <Button fx:id="shto" onAction="#shtoTraffic" layoutX="324.0" layoutY="341.0" mnemonicParsing="false" text="Shto"/>
+        <Label layoutX="88.0" layoutY="242.0" text="Nr. TVSH">
+            <font>
+                <Font name="System Bold" size="13.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

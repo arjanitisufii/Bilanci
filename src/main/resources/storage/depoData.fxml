@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.storage.DepoController">
+   <children>
+      <TableView fx:id="depoTableView" layoutY="44.0" prefHeight="276.0" prefWidth="366.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn prefWidth="130.0" text="Artikull">
+              <cellValueFactory>
+                  <PropertyValueFactory property="artikull" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn prefWidth="116.0" text="Seria">
+            <cellValueFactory>
+                <PropertyValueFactory property="seria" />
+            </cellValueFactory>
+          </TableColumn>
+            <TableColumn prefWidth="119.0" text="Sasia">
+            <cellValueFactory>
+                <PropertyValueFactory property="sasia" />
+            </cellValueFactory>
+            </TableColumn>
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

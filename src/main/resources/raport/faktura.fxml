@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.image.Image?>
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="671.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.raport.PrintFakturaController">
+    <children>
+        <TableView fx:id="malliTableView" layoutY="349.0" prefHeight="236.0" prefWidth="930.0">
+            <columns>
+                <TableColumn prefWidth="64.0" text="Kodi">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="kodi" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="126.0" text="Pershkrimi">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="pershkrimi" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="70.0" text="Seria">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="seria" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="111.0" text="Data Skadimit">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="dataSkadimit" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="84.0" text="Njesia">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="njesia" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="50.0" text="Sasia">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="sasia" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="107.0" text="Cmimi Pa Tvsh">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="cmimiPaTVSH" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="111.0" text="Cmimi Me Tvsh">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="cmimiMeTVSH" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="67.0" text="Rabati">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="rabati" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="62.0" text="Tvsh">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="tvsh" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="98.0" text="Vlera Me Tvsh">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="vleraMeTVSH" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <Button fx:id="print" layoutX="455.0" layoutY="625.0" mnemonicParsing="false" onAction="#printFaktura" text="Ruaj" />
+        <Line endX="782.0" layoutX="134.0" layoutY="118.0" startX="-100.0" />
+        <Label layoutX="208.0" layoutY="120.0" style="-fx-background-color: black;" text="SHITESI" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="695.0" layoutY="120.0" style="-fx-background-color: black;" text="BLERESI" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Line endX="-4.0" endY="-81.5" layoutX="458.0" layoutY="205.0" startX="-4.0" startY="121.0" />
+        <Label fx:id="shitesiEmri" layoutX="208.0" layoutY="144.0" prefHeight="17.0" prefWidth="49.0" />
+        <Label layoutX="33.0" layoutY="177.0" style="-fx-background-color: black;" text="Adresa" textFill="WHITE" />
+        <Label layoutX="33.0" layoutY="203.0" style="-fx-background-color: black;" text="Tel" textFill="#f8f8f8" />
+        <Label layoutX="33.0" layoutY="228.0" style="-fx-background-color: black;" text="NIPT" textFill="#eeeeee" />
+        <Label layoutX="33.0" layoutY="253.0" style="-fx-background-color: black;" text="Nr. TVSH" textFill="WHITE" />
+        <Label fx:id="bleresiEmri" layoutX="696.0" layoutY="144.0" prefHeight="17.0" prefWidth="48.0" />
+        <Label layoutX="525.0" layoutY="200.0" style="-fx-background-color: black;" text="Tel" textFill="WHITE" />
+        <Label layoutX="525.0" layoutY="225.0" style="-fx-background-color: black;" text="NIPT" textFill="WHITE" />
+        <Label layoutX="525.0" layoutY="250.0" style="-fx-background-color: black;" text="Nr. TVSH" textFill="WHITE" />
+        <Label layoutX="525.0" layoutY="276.0" style="-fx-background-color: black;" text="Nr. Biznesit" textFill="WHITE" />
+        <Label layoutX="758.0" layoutY="599.0" text="Detyrimi Total :" />
+        <Label fx:id="qmimiLabel" layoutX="863.0" layoutY="598.0" prefHeight="19.0" prefWidth="60.0">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="33.0" layoutY="279.0" style="-fx-background-color: black;" text="Nr. Biznesit" textFill="#eeeeee" />
+        <Label layoutX="525.0" layoutY="174.0" style="-fx-background-color: black;" text="Adresa" textFill="WHITE" />
+        <Label layoutX="33.0" layoutY="302.0" style="-fx-background-color: black;" text="Nr. Licenses" textFill="WHITE" />
+        <Label layoutX="525.0" layoutY="299.0" style="-fx-background-color: black;" text="Nr. Licenses" textFill="WHITE" />
+        <Label fx:id="adresaShitesiEdit" layoutX="258.0" layoutY="174.0" />
+        <Label fx:id="telShitesiEdit" layoutX="258.0" layoutY="200.0" />
+        <Label fx:id="niptShitesiEdit" layoutX="258.0" layoutY="225.0" />
+        <Label fx:id="tvshShitesiEdit" layoutX="258.0" layoutY="250.0" />
+        <Label fx:id="biznesiShitesiEdit" layoutX="258.0" layoutY="276.0" />
+        <Label fx:id="licensaShitesiEdit" layoutX="258.0" layoutY="299.0" />
+        <Label fx:id="adresaBlersiEdit" layoutX="787.0" layoutY="174.0" />
+        <Label fx:id="telBlersiEdit" layoutX="787.0" layoutY="200.0" />
+        <Label fx:id="niptBlersiEdit" layoutX="787.0" layoutY="225.0" />
+        <Label fx:id="tvshBlersiEdit" layoutX="787.0" layoutY="250.0" />
+        <Label fx:id="biznesiBlersiEdit" layoutX="787.0" layoutY="276.0" />
+        <Label fx:id="licensesBlersiEdit" layoutX="787.0" layoutY="299.0" />
+      <ImageView fitHeight="105.0" fitWidth="175.0" layoutX="388.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="/login/loginImage.jpg" />
+        </image>
+      </ImageView>
+    </children>
+</AnchorPane>
